@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <h1>Home</h1>
+      <h1>Attend a class</h1>
     </>
   );
 }
