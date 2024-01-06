@@ -1,7 +1,12 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { MaxWidthContainer } from "./styled/MaxWidthContainer";
 
 const Navbar = () => {
+  const path = usePathname();
+
   const navLinks = [
     { name: "HOME", href: "/" },
     { name: "LOCATIONS", href: "/locations" },
@@ -15,7 +20,12 @@ const Navbar = () => {
       <MaxWidthContainer>
         <ul className="text-white font-bold flex justify-between w-full max-w-[645px]">
           {navLinks.map((navLink, idx) => (
-            <li key={idx} className="hover:text-sky-400 duration-300">
+            <li
+              key={idx}
+              className={`hover:text-sky-400 duration-300 ${
+                path === navLink.href ? "text-sky-400" : ""
+              }`}
+            >
               <Link href={navLink.href}>{navLink.name}</Link>
             </li>
           ))}
