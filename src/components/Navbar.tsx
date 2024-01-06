@@ -50,7 +50,8 @@ const Navbar = () => {
             </li>
           ))}
           <Link
-            href={"/"}
+            href={"https://paypal.com"}
+            target="_blank"
             className="px-5 py-2 bg-sky-500 rounded-xl hover:bg-white hover:text-sky-500 duration-300"
           >
             DONATE NOW
