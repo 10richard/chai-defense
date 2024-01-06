@@ -12,8 +12,8 @@ const Navbar = () => {
   const navLinks = [
     { name: "HOME", href: "/" },
     { name: "LOCATIONS", href: "/locations" },
-    { name: "ABOUT", href: "/about" },
     { name: "ATTEND CLASS", href: "/attend-a-class" },
+    { name: "ABOUT", href: "/about" },
     { name: "CONTACT US", href: "/contact-us" },
   ];
 
@@ -37,7 +37,7 @@ const Navbar = () => {
         navbar ? "bg-black bg-opacity-75" : ""
       }`}
     >
-      <MaxWidthContainer>
+      <MaxWidthContainer className="flex justify-center">
         <ul className="text-white font-bold flex justify-between items-center w-full max-w-[850px]">
           {navLinks.map((navLink, idx) => (
             <li
@@ -52,7 +52,7 @@ const Navbar = () => {
           <Link
             href={"https://paypal.com"}
             target="_blank"
-            className="px-5 py-2 bg-sky-500 rounded-xl hover:bg-white hover:text-sky-500 duration-300"
+            className="px-5 py-2 bg-sky-500 border border-white rounded-xl hover:bg-white hover:text-sky-400 duration-300"
           >
             DONATE NOW
           </Link>

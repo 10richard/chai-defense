@@ -12,7 +12,7 @@ const Hero = () => {
         backgroundSize: "cover",
       }}
     >
-      <MaxWidthContainer>
+      <MaxWidthContainer className="flex justify-center">
         <div className="text-white text-center pt-[175px] max-w-[750px]">
           <h1 className="text-6xl font-bold mb-8 leading-snug">
             Command Your Safety with Chai Defense
