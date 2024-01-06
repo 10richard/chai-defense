@@ -11,11 +11,11 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="flex justify-center py-4 px-6 fixed w-full">
+    <nav className="flex justify-center py-8 px-6 fixed z-40 w-full">
       <MaxWidthContainer>
-        <ul className="font-bold flex justify-between w-full max-w-[645px]">
+        <ul className="text-white font-bold flex justify-between w-full max-w-[645px]">
           {navLinks.map((navLink, idx) => (
-            <li key={idx}>
+            <li key={idx} className="hover:text-sky-400 duration-300">
               <Link href={navLink.href}>{navLink.name}</Link>
             </li>
           ))}
