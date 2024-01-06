@@ -14,10 +14,10 @@ const Hero = () => {
     >
       <MaxWidthContainer>
         <div className="text-white text-center pt-[175px] max-w-[750px]">
-          <h1 className="text-6xl font-bold mb-12">
+          <h1 className="text-6xl font-bold mb-8 leading-snug">
             Command Your Safety with Chai Defense
           </h1>
-          <p className="text-[#a8a8a8] mx-auto mb-12 max-w-[625px]">
+          <p className="text-[#a8a8a8] mx-auto mb-12 max-w-[625px] leading-normal">
             <strong>Self-defense</strong> is a <strong>must</strong> for
             everyone. It <strong>empowers</strong> and ensures{" "}
             <strong>personal safety</strong> in an unpredictable world. Learn
