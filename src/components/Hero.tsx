@@ -1,6 +1,6 @@
 import { MaxWidthContainer } from "./styled/MaxWidthContainer";
-import Link from "next/link";
 import heroBG from "../../public/images/hero-bg.png";
+import MainButton from "./MainButton";
 
 const Hero = () => {
   return (
@@ -24,12 +24,7 @@ const Hero = () => {
             the skills needed to <strong>stay safe</strong> and{" "}
             <strong>confident</strong>.
           </p>
-          <Link
-            className="text-lg text-sky-400 px-8 py-4 rounded-full inline-block hover:before:bg-redborder-red-500 relative overflow-hidden border border-sky-400 bg-white transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-sky-400 before:transition-all before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full"
-            href="/attend-a-class"
-          >
-            <span className="relative z-10">Master Self-Defense</span>
-          </Link>
+          <MainButton text="Master Self-Defense" />
         </div>
       </MaxWidthContainer>
     </section>
