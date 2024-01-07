@@ -21,7 +21,7 @@ const DiscoverKravMaga = () => {
             </p>
           </div>
           <Image
-            src={"/images/discover-kravmaga/image1.jpeg"}
+            src={"/images/discover-kravmaga.jpeg"}
             alt="Discover Krav Maga"
             width={500}
             height={0}
