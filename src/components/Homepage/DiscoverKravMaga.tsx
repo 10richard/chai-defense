@@ -7,7 +7,7 @@ const DiscoverKravMaga = () => {
     <PaddedSection className="bg-gray">
       <MaxWidthContainer>
         <div className="flex justify-around items-center">
-          <div className="flex flex-col max-w-[600px]">
+          <div className="flex flex-col max-w-[500px]">
             <h2 className="text-5xl font-bold">
               What is <span className="text-primary">Krav Maga?</span>
             </h2>
