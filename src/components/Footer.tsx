@@ -22,15 +22,25 @@ const Footer = () => {
           <div className="flex justify-between max-w-[300px] w-full">
             <ul className="flex flex-col gap-5">
               {firstQuickLinks.map((l, idx) => (
-                <li key={idx} className="hover:text-primary duration-300">
-                  <Link href={l.href}>{l.name}</Link>
+                <li key={idx}>
+                  <Link
+                    href={l.href}
+                    className="hover:text-primary duration-300"
+                  >
+                    {l.name}
+                  </Link>
                 </li>
               ))}
             </ul>
             <ul className="flex flex-col gap-5">
               {secondQuickLinks.map((l, idx) => (
-                <li key={idx} className="hover:text-primary duration-300">
-                  <Link href={l.href}>{l.name}</Link>
+                <li key={idx}>
+                  <Link
+                    href={l.href}
+                    className="hover:text-primary duration-300"
+                  >
+                    {l.name}
+                  </Link>
                 </li>
               ))}
             </ul>
