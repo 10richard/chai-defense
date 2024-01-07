@@ -1,12 +1,11 @@
-import MainButton from "./MainButton";
-import { MaxWidthContainer } from "./styled/MaxWidthContainer";
+import { MaxWidthContainer } from "../styled/MaxWidthContainer";
 import Image from "next/image";
 
 const DiscoverKravMaga = () => {
   return (
     <section className="py-[140px] bg-[#f5f5f5]">
       <MaxWidthContainer>
-        <div className="flex justify-around items-center mb-24">
+        <div className="flex justify-around items-center">
           <div className="flex flex-col max-w-[600px]">
             <h2 className="text-5xl font-bold">
               What is <span className="text-primary">Krav Maga?</span>

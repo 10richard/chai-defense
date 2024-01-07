@@ -1,6 +1,6 @@
-import { MaxWidthContainer } from "./styled/MaxWidthContainer";
-import heroBG from "../../public/images/hero-bg.png";
-import MainButton from "./MainButton";
+import { MaxWidthContainer } from "../styled/MaxWidthContainer";
+import heroBG from "../../../public/images/hero-bg.png";
+import MainButton from "../MainButton";
 
 const Hero = () => {
   return (
