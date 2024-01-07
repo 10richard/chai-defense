@@ -24,8 +24,8 @@ const About = () => {
   return (
     <PaddedSection className="bg-gray">
       <MaxWidthContainer className="flex flex-col gap-[120px]">
-        <div className="flex justify-around items-center">
-          <div className="flex flex-col max-w-[475px]">
+        <div className="flex justify-between items-center">
+          <div className="flex flex-col max-w-[575px]">
             <h2 className="text-5xl font-bold">Who We Are</h2>
             <span className="bg-primary h-[2px] w-1/2 mt-2 mb-8 max-w-[150px]"></span>
             <p className="text-[#626262] mb-10">
@@ -46,7 +46,7 @@ const About = () => {
             className="rounded-xl border-2 border-primary shadow-md"
           ></Image>
         </div>
-        <div className="flex justify-around items-center">
+        <div className="flex justify-between items-center">
           <Image
             src={"/images/about/our-mission.jpeg"}
             alt="Our Mission"
@@ -54,14 +54,14 @@ const About = () => {
             height={0}
             className="rounded-xl border-2 border-primary shadow-md"
           ></Image>
-          <div className="flex flex-col items-center max-w-[475px]">
+          <div className="flex flex-col items-center px-10 max-w-[575px]">
             <Image
               src={"/images/about/target-icon.svg"}
               alt="Chai Defense's Mission"
               width={150}
               height={0}
             ></Image>
-            <div className="flex flex-col self-start">
+            <div className="text-center flex flex-col items-center self-start">
               <h2 className="text-4xl font-bold">Our Mission</h2>
               <span className="bg-primary h-[2px] w-1/2 mt-2 mb-8 max-w-[150px]"></span>
               <p className="text-[#626262]">
@@ -73,15 +73,15 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-around items-center">
-          <div className="flex flex-col items-center max-w-[475px]">
+        <div className="flex justify-between items-center">
+          <div className="flex flex-col items-center px-10 max-w-[575px]">
             <Image
               src={"/images/about/classes-icon.svg"}
               alt="About Chai Defense Classes"
               width={125}
               height={0}
             ></Image>
-            <div className="flex flex-col self-start">
+            <div className="text-center flex flex-col items-center self-start">
               <h2 className="text-4xl font-bold">Our Classes</h2>
               <span className="bg-primary h-[2px] w-1/2 mt-2 mb-8 max-w-[150px]"></span>
               <p className="text-[#626262]">
