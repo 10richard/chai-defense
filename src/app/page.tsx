@@ -15,7 +15,7 @@ export default function Home() {
       <DiscoverKravMaga />
       <WhySelfDefense />
       <Instructors />
-      <Contact />
+      <Contact heading="Contact Us" subheading="Have Questions?" />
       {/*<DonateCta />
       <Footer /> */}
     </>
