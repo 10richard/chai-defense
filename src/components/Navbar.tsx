@@ -14,7 +14,7 @@ const Navbar = () => {
     { name: "LOCATIONS", href: "/locations" },
     { name: "ATTEND CLASS", href: "/attend-a-class" },
     { name: "ABOUT", href: "/about" },
-    { name: "CONTACT US", href: "/contact-us" },
+    { name: "CONTACT", href: "/contact-us" },
   ];
 
   const LocationsLinks = [

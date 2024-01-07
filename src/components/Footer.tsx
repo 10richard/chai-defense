@@ -10,7 +10,7 @@ const Footer = () => {
 
   const secondQuickLinks = [
     { name: "About", href: "/about" },
-    { name: "Contact Us", href: "/contact-us" },
+    { name: "Contact", href: "/contact-us" },
     { name: "Donate Now", href: "/donate" },
   ];
 
