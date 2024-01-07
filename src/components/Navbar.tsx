@@ -25,12 +25,12 @@ const Navbar = () => {
   ];
 
   const Sublinks = () => (
-    <div className="text-white hidden absolute rounded-sm hover:flex hover:flex-col group-hover:flex group-hover:flex-col">
+    <div className="text-black hidden absolute rounded-sm hover:flex hover:flex-col group-hover:flex group-hover:flex-col">
       {LocationsLinks.map((location, idx) => (
         <Link
           key={idx}
           href={location.href}
-          className="font-medium bg-zinc-400 border-[0.5px] border-black py-2 px-4 hover:bg-zinc-600"
+          className="font-medium bg-zinc-300 border-[0.5px] border-black py-2 px-4 hover:text-white hover:bg-zinc-600 duration-200"
         >
           {location.name}
         </Link>
@@ -63,8 +63,8 @@ const Navbar = () => {
           {NavLinks.map((navLink, idx) => (
             <li
               key={idx}
-              className={`text-white font-bold hover:text-sky-400 duration-300 ${
-                path === navLink.href ? "text-secondary" : ""
+              className={`font-bold hover:text-sky-400 duration-300 ${
+                path === navLink.href ? "text-secondary" : "text-white"
               } ${navLink.name === "LOCATIONS" ? "group" : ""}`}
             >
               <Link href={navLink.href}>{navLink.name}</Link>
@@ -73,8 +73,10 @@ const Navbar = () => {
           ))}
           <Link
             href={"/donate"}
-            className={`text-white px-5 py-2 bg-primary border border-white rounded-xl hover:bg-white hover:text-secondary duration-300 ${
-              path === "/donate" ? "bg-white text-secondary" : ""
+            className={`px-5 py-2 border border-white rounded-xl hover:bg-white hover:text-secondary duration-300 ${
+              path === "/donate"
+                ? "bg-white text-secondary"
+                : "text-white bg-primary"
             }`}
           >
             DONATE NOW
