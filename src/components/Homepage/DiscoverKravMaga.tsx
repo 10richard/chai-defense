@@ -4,7 +4,7 @@ import { PaddedSection } from "../styled/PaddedSection";
 
 const DiscoverKravMaga = () => {
   return (
-    <PaddedSection className="bg-[#f5f5f5]">
+    <PaddedSection className="bg-gray">
       <MaxWidthContainer>
         <div className="flex justify-around items-center">
           <div className="flex flex-col max-w-[600px]">
