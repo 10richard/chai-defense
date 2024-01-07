@@ -51,9 +51,9 @@ const Footer = () => {
           <p className="mb-2">
             © {new Date().getFullYear()} Chai Defense - All rights reserved.
           </p>
-          <Link href={"https://tenmedia.co"} target="_blank">
+          {/* <Link href={"https://tenmedia.co"} target="_blank">
             Built by TenMedia
-          </Link>
+          </Link> */}
         </div>
       </MaxWidthContainer>
     </footer>
