@@ -43,7 +43,7 @@ const Navbar = () => {
             <li
               key={idx}
               className={`hover:text-sky-400 duration-300 ${
-                path === navLink.href ? "text-sky-400" : ""
+                path === navLink.href ? "text-secondary" : ""
               }`}
             >
               <Link href={navLink.href}>{navLink.name}</Link>
@@ -52,7 +52,7 @@ const Navbar = () => {
           <Link
             href={"https://paypal.com"}
             target="_blank"
-            className="px-5 py-2 bg-sky-500 border border-white rounded-xl hover:bg-white hover:text-sky-400 duration-300"
+            className="px-5 py-2 bg-primary border border-white rounded-xl hover:bg-white hover:text-secondary duration-300"
           >
             DONATE NOW
           </Link>

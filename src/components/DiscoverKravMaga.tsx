@@ -9,9 +9,9 @@ const DiscoverKravMaga = () => {
         <div className="flex justify-around items-center mb-24">
           <div className="flex flex-col max-w-[600px]">
             <h2 className="text-5xl font-bold">
-              What is <span className="text-sky-500">Krav Maga?</span>
+              What is <span className="text-primary">Krav Maga?</span>
             </h2>
-            <span className="bg-sky-500 h-[2px] w-1/2 mt-2 mb-8"></span>
+            <span className="bg-primary h-[2px] w-1/2 mt-2 mb-8"></span>
             <p className="leading-normal">
               Krav Maga, translated from Hebrew as "contact combat," is a highly
               practical and efficient self-defense system developed in Israel.
@@ -25,7 +25,7 @@ const DiscoverKravMaga = () => {
             alt="Discover Krav Maga"
             width={500}
             height={0}
-            className="rounded-xl border-2 border-sky-500 shadow-md"
+            className="rounded-xl border-2 border-primary shadow-md"
           ></Image>
         </div>
         <div className="flex justify-around items-center mb-24">
@@ -34,13 +34,13 @@ const DiscoverKravMaga = () => {
             alt="Discover Krav Maga"
             width={500}
             height={500}
-            className="rounded-xl border-2 border-sky-500 shadow-md"
+            className="rounded-xl border-2 border-primary shadow-md"
           ></Image>
           <div className="flex flex-col max-w-[600px]">
             <h2 className="text-5xl font-bold">
-              Prioritize <span className="text-sky-500">Safety</span>
+              Prioritize <span className="text-primary">Safety</span>
             </h2>
-            <span className="bg-sky-500 h-[2px] w-1/2 mt-2 mb-8"></span>
+            <span className="bg-primary h-[2px] w-1/2 mt-2 mb-8"></span>
             <p className="leading-normal">
               Krav Maga prioritizes safety by focusing on efficient techniques
               tailored for real-world situations. Emphasizing quick responses
@@ -69,7 +69,7 @@ const DiscoverKravMaga = () => {
             alt="Discover Krav Maga"
             width={500}
             height={0}
-            className="rounded-xl border-2 border-sky-500 shadow-md"
+            className="rounded-xl border-2 border-primary shadow-md"
           ></Image>
         </div>
         <div className="flex justify-center">
