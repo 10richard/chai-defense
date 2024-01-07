@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Chai Defense | Self-Defense Classes",
-  description: "",
+  description: "Fighting back against Anti-Semitism through Krav Maga",
 };
 
 export default function RootLayout({
