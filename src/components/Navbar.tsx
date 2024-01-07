@@ -73,7 +73,7 @@ const Navbar = () => {
           ))}
           <Link
             href={"/donate"}
-            className={`px-5 py-2 bg-primary border border-white rounded-xl hover:bg-white hover:text-secondary duration-300 ${
+            className={`text-white px-5 py-2 bg-primary border border-white rounded-xl hover:bg-white hover:text-secondary duration-300 ${
               path === "/donate" ? "bg-white text-secondary" : ""
             }`}
           >
