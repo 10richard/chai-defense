@@ -50,8 +50,7 @@ const Navbar = () => {
             </li>
           ))}
           <Link
-            href={"https://paypal.com"}
-            target="_blank"
+            href={"/donate"}
             className="px-5 py-2 bg-primary border border-white rounded-xl hover:bg-white hover:text-secondary duration-300"
           >
             DONATE NOW
