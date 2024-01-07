@@ -17,7 +17,7 @@ export default function Home() {
       <Instructors />
       <Contact heading="Have Questions?" subheading="Contact Us" />
       <DonateCta />
-      {/*<Footer /> */}
+      <Footer />
     </>
   );
 }
