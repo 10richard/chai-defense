@@ -29,9 +29,9 @@ const WhySelfDefense = () => {
           <h2 className="text-5xl font-bold">Why You Need Self-Defense</h2>
           <span className="bg-primary h-[2px] w-1/2 mt-2"></span>
         </div>
-        <div className="flex flex-wrap justify-center gap-10 mb-24">
+        <div className="flex flex-wrap justify-center gap-8 mb-24">
           {reasons.map((r, idx) => (
-            <div className="flex flex-col items-center py-10 px-[30px] rounded-lg shadow-lg w-[calc(33%-40px)] min-w-[315px]">
+            <div className="flex flex-col items-center py-12 px-7 rounded-lg shadow-lg w-[calc(33%-32px)] min-w-[315px]">
               <Image
                 src={`/images/self-defense-icons/${r.img}`}
                 alt={r.title}
