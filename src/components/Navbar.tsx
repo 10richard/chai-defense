@@ -9,13 +9,34 @@ const Navbar = () => {
   const path = usePathname();
   const [navbar, setNavbar] = useState(false);
 
-  const navLinks = [
+  const NavLinks = [
     { name: "HOME", href: "/" },
     { name: "LOCATIONS", href: "/locations" },
     { name: "ATTEND CLASS", href: "/attend-a-class" },
     { name: "ABOUT", href: "/about" },
     { name: "CONTACT US", href: "/contact-us" },
   ];
+
+  const LocationsLinks = [
+    { name: "Location 1", href: "/locations" },
+    { name: "Location 2", href: "/locations" },
+    { name: "Location 3", href: "/locations" },
+    { name: "Location 4", href: "/locations" },
+  ];
+
+  const Sublinks = () => (
+    <div className="text-white hidden absolute rounded-sm hover:flex hover:flex-col group-hover:flex group-hover:flex-col">
+      {LocationsLinks.map((location, idx) => (
+        <Link
+          key={idx}
+          href={location.href}
+          className="font-medium bg-zinc-400 border-[0.5px] border-black py-2 px-4 hover:bg-zinc-600"
+        >
+          {location.name}
+        </Link>
+      ))}
+    </div>
+  );
 
   if (typeof window !== "undefined") {
     useEffect(() => {
@@ -38,15 +59,16 @@ const Navbar = () => {
       }`}
     >
       <MaxWidthContainer className="flex justify-center">
-        <ul className="text-white font-bold flex justify-between items-center w-full max-w-[850px]">
-          {navLinks.map((navLink, idx) => (
+        <ul className="flex justify-between items-center w-full max-w-[850px]">
+          {NavLinks.map((navLink, idx) => (
             <li
               key={idx}
-              className={`hover:text-sky-400 duration-300 ${
+              className={`text-white font-bold hover:text-sky-400 duration-300 ${
                 path === navLink.href ? "text-secondary" : ""
-              }`}
+              } ${navLink.name === "LOCATIONS" ? "group" : ""}`}
             >
               <Link href={navLink.href}>{navLink.name}</Link>
+              {navLink.name === "LOCATIONS" && <Sublinks />}
             </li>
           ))}
           <Link
