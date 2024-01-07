@@ -1,4 +1,6 @@
+import About from "@/components/About/About";
 import Banner from "@/components/Banner";
+import DonateCta from "@/components/DonateCta";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
@@ -7,7 +9,8 @@ export default function Home() {
     <>
       <Navbar />
       <Banner heading="About Us" />
-      <p>Who We Are, Our Mission, Our Classes</p>
+      <About />
+      <DonateCta />
       <Footer />
     </>
   );
