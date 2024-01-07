@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Homepage/Hero";
 import Navbar from "@/components/Navbar";
 import WhySelfDefense from "@/components/Homepage/WhySelfDefense";
+import Instructors from "@/components/Homepage/Instructors";
 
 export default function Home() {
   return (
@@ -13,8 +14,9 @@ export default function Home() {
       <Hero />
       <DiscoverKravMaga />
       <WhySelfDefense />
-      {/* <Contact />
-      <DonateCta />
+      <Instructors />
+      <Contact />
+      {/*<DonateCta />
       <Footer /> */}
     </>
   );

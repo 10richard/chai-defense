@@ -1,6 +1,7 @@
 import MainButton from "../MainButton";
 import { MaxWidthContainer } from "../styled/MaxWidthContainer";
 import Image from "next/image";
+import { PaddedSection } from "../styled/PaddedSection";
 
 const WhySelfDefense = () => {
   const reasons = [
@@ -22,7 +23,7 @@ const WhySelfDefense = () => {
   ];
 
   return (
-    <section className="text-center py-[140px]">
+    <PaddedSection className="text-center">
       <MaxWidthContainer>
         <div className="flex flex-col items-center mb-20">
           <h2 className="text-5xl font-bold">Why You Need Self-Defense</h2>
@@ -46,7 +47,7 @@ const WhySelfDefense = () => {
           <MainButton text="Learn Self-Defense" />
         </div>
       </MaxWidthContainer>
-    </section>
+    </PaddedSection>
   );
 };
 

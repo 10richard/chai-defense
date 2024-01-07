@@ -1,9 +1,10 @@
 import { MaxWidthContainer } from "../styled/MaxWidthContainer";
 import Image from "next/image";
+import { PaddedSection } from "../styled/PaddedSection";
 
 const DiscoverKravMaga = () => {
   return (
-    <section className="py-[140px] bg-[#f5f5f5]">
+    <PaddedSection className="bg-[#f5f5f5]">
       <MaxWidthContainer>
         <div className="flex justify-around items-center">
           <div className="flex flex-col max-w-[600px]">
@@ -28,7 +29,7 @@ const DiscoverKravMaga = () => {
           ></Image>
         </div>
       </MaxWidthContainer>
-    </section>
+    </PaddedSection>
   );
 };
 
