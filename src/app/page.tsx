@@ -16,8 +16,8 @@ export default function Home() {
       <WhySelfDefense />
       <Instructors />
       <Contact heading="Have Questions?" subheading="Contact Us" />
-      {/*<DonateCta />
-      <Footer /> */}
+      <DonateCta />
+      {/*<Footer /> */}
     </>
   );
 }
