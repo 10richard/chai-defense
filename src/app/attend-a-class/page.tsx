@@ -14,7 +14,7 @@ export default function Home() {
         <MaxWidthContainer>
           <p>
             Is this page needed? - (Have locations page where user will be able
-            to schedule from)
+            to schedule a class)
           </p>
         </MaxWidthContainer>
       </PaddedSection>
