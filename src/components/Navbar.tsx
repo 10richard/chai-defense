@@ -25,12 +25,12 @@ const Navbar = () => {
   ];
 
   const Sublinks = () => (
-    <div className="text-black hidden absolute rounded-sm hover:flex hover:flex-col group-hover:flex group-hover:flex-col">
+    <div className="text-black hidden absolute max-w-[200px] w-full rounded-sm hover:flex hover:flex-col group-hover:flex group-hover:flex-col">
       {LocationsLinks.map((location, idx) => (
         <Link
           key={idx}
           href={location.href}
-          className="font-medium bg-zinc-300 border-[0.5px] border-black py-2 px-4 hover:text-white hover:bg-zinc-600 duration-200"
+          className="font-medium bg-zinc-300 border-[0.5px] border-black py-2 px-4 w-full self-start hover:text-white hover:bg-zinc-600 duration-200"
         >
           {location.name}
         </Link>
