@@ -1,7 +1,9 @@
+"use client";
+
 import nodemailer from "nodemailer";
 import { NextApiRequest, NextApiResponse } from "next";
 
-export default async function handler(
+export default async function formHandler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
@@ -13,7 +15,7 @@ export default async function handler(
 
   // Forward the form data to multiple email addresses
   const toEmails = ["tenrichard043006@gmail.com", "richten046@gmail.com"];
-  const subject = "Chai Defense Contact Us Form Submission";
+  const subject = "Chai Defense Form Submission";
   const body = `First Name: ${first_name}\nLast Name: ${last_name}\nEmail: ${email}\nPhone: ${phone_number}\nComment: ${comment}`;
 
   // Configure nodemailer to send emails
@@ -22,8 +24,8 @@ export default async function handler(
     port: 465,
     secure: true,
     auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASSWORD,
+      user: "chaidefensesmtp@gmail.com",
+      pass: "gxmw ejop qjna qyif",
     },
   });
 

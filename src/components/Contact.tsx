@@ -17,6 +17,7 @@ const Contact = ({ heading, subheading }: ContactProps) => {
     phone_number: "",
     comment: "",
   });
+  const [formSubmit, setFormSubmit] = useState(false);
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -32,6 +33,7 @@ const Contact = ({ heading, subheading }: ContactProps) => {
 
       if (response.ok) {
         console.log("Form submitted successfully!");
+        setFormSubmit(true);
       } else {
         console.error("Form submission failed.");
       }
@@ -114,8 +116,9 @@ const Contact = ({ heading, subheading }: ContactProps) => {
           <button
             className="text-white font-semibold bg-primary/80 px-8 py-3 w-1/2 relative hover:bg-primary hover:-translate-y-1 duration-300"
             type="submit"
+            disabled={formSubmit}
           >
-            Submit
+            {formSubmit ? "FORM SUBMITTED" : "Submit"}
           </button>
         </form>
       </MaxWidthContainer>
