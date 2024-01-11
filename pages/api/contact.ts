@@ -16,13 +16,7 @@ export default async function formHandler(
   const smtpPassword = process.env.SMTP_PASSWORD;
 
   // Forward the form data to multiple email addresses
-  const toEmails = [
-    "Lawrence@ChaiDefense.com",
-    "Erica@ChaiDefense.com",
-    "Jeff@ChaiDefense.com",
-    "Julie@ChaiDefense.com",
-    "Fred@ChaiDefense.com",
-  ];
+  const toEmails = ["richten046@gmail.com"];
   const subject = "Chai Defense Form Submission";
   const body = `First Name: ${first_name}\nLast Name: ${last_name}\nEmail: ${email}\nPhone: ${phone_number}\nComment: ${comment}`;
 
